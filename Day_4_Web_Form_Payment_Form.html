@@ -1,0 +1,49 @@
+ <!-- Web Payment form -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Payment Form</title>
+ </head>
+ <body>
+    <form action=" "> <!--for the form -->
+         <h1>Payment Form</h1>
+         <p>Required Fileds are followed by *</p>
+         <h2>Contact Information</h2>
+         <p>Name: * <input type="text" name="name" required></p> <!--To input the name-->
+         <fieldset> <!-- To group fields-->
+             <legend>Gender *</legend> <!--field name -->
+            <p> <!--Radio buttons-->
+                Male <input type="radio" name="gender" id="Male" required>
+                Female <input type="radio" name="gender" id="Female" required>
+            </p>
+        </fieldset>
+        <p> Address: * <textarea name="address" id="address" cols="100" rows="8" required></textarea></p> <!--Address textbox-->
+        <p>Email: * <input type="email" name="email" id="email" required></p><!--Email-->
+        <p>pincode: * <input type="number" name="pincode" id="pincode" required></p> <!--Pincode-->
+        <hr>
+        <h2>Payment Information</h2>
+        <p>
+            Card Type: * 
+            <select name="card_type" id="card_type" required> <!--Selecting card type (for drop down menu)-->
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>
+            Card Number * <input type="number" name="card_number" id="card_number" required> <!--Card no-->
+        </p>
+        <p>
+            Expiration Date: * <input type="date" name="Exp_date" id="Exp_date" required><!--Exp date-->
+        </p>
+        <p>
+            CVV: * <input type="password" name="CVV" id="CVV" required> <!--CVV-->
+        </p>
+        <input type="submit" value="Pay Now"> <!--Pay Now button-->
+    </form>
+ </body>
+ </html> 
