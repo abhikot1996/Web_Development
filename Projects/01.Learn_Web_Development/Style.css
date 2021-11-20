@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    background-color: cadetblue;
+
+}
+h1[class="header_h1"]
+{color:white;
+ font-size: 400%;
+ background-color:black;
+ 
+}
+h3[class="nav_h3"],[class="HTML_Button"],[class="CSS_Button"],[class="JavaScript_Button"]
+{
+    font-size: 120%;
+    color: blue;    
+}
+h3,a[class="HTML_Button"],[class="CSS_Button"],[class="JavaScript_Button"]
+{    
+    background-color: tomato;
+    padding: 10px 10px;
+}
+a[class="More_Button"],[class="Home_Button"]
+{
+    color:blue;
+    padding: 10px 10px;
+}  
+
+hr{
+    color:blue;
+}
+h2[class="footer_h2"]{
+    color:white;
+ font-size: 250%;
+ background-color:black;
+}
+a:hover{
+    color:yellow;
+    text-decoration:none;
+}
